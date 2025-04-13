@@ -1,0 +1,85 @@
+
+/* Custom styling for wallet adapter UI components */
+.wallet-adapter-button {
+    background-color: hsl(var(--primary)) !important;
+    border-radius: 0.5rem !important;
+    height: 2.5rem !important;
+    color: hsl(var(--primary-foreground)) !important;
+    font-family: inherit !important;
+    font-size: 0.875rem !important;
+  }
+  
+  .wallet-adapter-button:hover {
+    background-color: hsl(var(--primary)/90%) !important;
+  }
+  
+  .wallet-adapter-button:not([disabled]):focus-visible {
+    outline-color: hsl(var(--ring)) !important;
+  }
+  
+  .wallet-adapter-button-trigger {
+    background-color: hsl(var(--primary)) !important;
+  }
+  
+  .wallet-adapter-button .wallet-adapter-button-start-icon {
+    margin-right: 0.5rem !important;
+  }
+  
+  .wallet-adapter-dropdown {
+    font-family: inherit !important;
+  }
+  
+  .wallet-adapter-dropdown-list {
+    background: hsl(var(--background)) !important;
+    border: 1px solid hsl(var(--border)) !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    font-family: inherit !important;
+  }
+  
+  .wallet-adapter-dropdown-list-item {
+    color: hsl(var(--foreground)) !important;
+    font-size: 0.875rem !important;
+    transition: background-color 0.2s ease !important;
+  }
+  
+  .wallet-adapter-dropdown-list-item:hover {
+    background-color: hsl(var(--accent)) !important;
+    color: hsl(var(--accent-foreground)) !important;
+  }
+  
+  .wallet-adapter-modal-wrapper {
+    background-color: hsl(var(--background)) !important;
+    border-radius: 0.75rem !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+  }
+  
+  .wallet-adapter-modal-title {
+    color: hsl(var(--foreground)) !important;
+    font-family: inherit !important;
+  }
+  
+  .wallet-adapter-modal-content {
+    color: hsl(var(--muted-foreground)) !important;
+    font-family: inherit !important;
+  }
+  
+  .wallet-adapter-modal-list {
+    margin-top: 1rem !important;
+  }
+  
+  .wallet-adapter-modal-list .wallet-adapter-button {
+    font-family: inherit !important;
+    background-color: hsl(var(--secondary)) !important;
+    color: hsl(var(--secondary-foreground)) !important;
+    border-radius: 0.5rem !important;
+  }
+  
+  .wallet-adapter-modal-list .wallet-adapter-button:hover {
+    background-color: hsl(var(--secondary)/80%) !important;
+  }
+  
+  .wallet-adapter-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(4px) !important;
+  }

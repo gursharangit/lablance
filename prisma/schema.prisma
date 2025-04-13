@@ -1,0 +1,91 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Company {
+  id             String    @id @default(uuid())
+  walletAddress  String    @unique @map("wallet_address")
+  companyName    String    @map("company_name")
+  industry       String
+  contactName    String    @map("contact_name")
+  email          String
+  description    String?
+  createdAt      DateTime  @default(now()) @map("created_at")
+  projects       Project[]
+  
+  @@map("companies")
+}
+
+model Project {
+  id                     String    @id @default(uuid())
+  companyId              String    @map("company_id")
+  name                   String
+  type                   String
+  description            String
+  estimatedItems         Int       @map("estimated_items")
+  qualityRequirement     String    @map("quality_requirement")
+  instructions           String
+  status                 String    @default("draft")
+  createdAt              DateTime  @default(now()) @map("created_at")
+  fileUrls               String[]  @map("file_urls")
+  paymentAmount          Float?    @map("payment_amount")
+  itemsCompleted         Int?      @map("items_completed")
+  estimatedCompletionDate DateTime? @map("estimated_completion_date")
+  transactionSignature   String?   @map("transaction_signature")
+  company                Company   @relation(fields: [companyId], references: [id])
+  tasks             Task[]
+  
+  @@map("projects")
+}
+
+model Labeler {
+  id                  String    @id @default(uuid())
+  walletAddress       String    @unique
+  firstName           String
+  lastName            String
+  email               String
+  country             String
+  primaryLanguage     String?
+  englishProficiency  String?
+  skills              String[]
+  availableHours      String?
+  preferredTime       String?
+  education           String?
+  experience          String?
+  experienceDescription String?
+  deviceType          String?
+  internetSpeed       String?
+  rating              Float     @default(0)
+  totalEarned         Float     @default(0)
+  tasksCompleted      Int       @default(0)
+  status              String    @default("active")
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+  tasks               Task[]
+}
+
+model Task {
+  id                String    @id @default(uuid())
+  projectId         String
+  project           Project   @relation(fields: [projectId], references: [id])
+  labelerId         String?
+  labeler           Labeler?  @relation(fields: [labelerId], references: [id])
+  fileUrl           String
+  status            String    @default("pending") // pending, in_progress, completed, rejected
+  result            Json?
+  paymentAmount     Float?
+  paymentTxSignature String?
+  batchNumber       Int?
+  taskData          Json?
+  createdAt         DateTime  @default(now())
+  completedAt       DateTime?
+  updatedAt         DateTime  @updatedAt
+}

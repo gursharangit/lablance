@@ -16,17 +16,21 @@ import {
 import { Separator } from "../ui/separator";
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-
-  // Only render on home page
+  
+  // Only render on home page - check this BEFORE using any hooks
   if (pathname !== "/") {
     return null;
   }
 
+  // Now we can safely define and use hooks
+  const [isOpen, setIsOpen] = useState(false);
+  
   // Close mobile menu when route changes
   useEffect(() => {
-    setIsOpen(false);
+    if (pathname === "/") {
+      setIsOpen(false);
+    }
   }, [pathname]);
 
   // Check if route is active

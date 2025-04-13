@@ -11,6 +11,8 @@ A blockchain-powered platform that connects companies with a global workforce fo
 - **Quality Control**: Built-in verification mechanisms to ensure accurate labeling
 - **Responsive Design**: Works seamlessly across desktop and mobile devices
 
+![alt text](image.png)
+
 ## 🛠️ Technologies Used
 
 - **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS, shadcn/ui

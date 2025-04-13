@@ -61,7 +61,7 @@ export default function LabelerSuccessPage() {
           
           <CardFooter className="flex justify-center pb-6">
             <Button asChild>
-              <Link href="/dashboard">
+              <Link href="/labeler/dashboard">
                 Go to Dashboard
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>

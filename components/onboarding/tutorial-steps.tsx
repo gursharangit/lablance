@@ -116,7 +116,7 @@ export function TutorialSteps() {
           <div className="mt-6 border-t pt-6">
             <h3 className="font-medium mb-3">Try a Sample Task</h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Here's an example of a simple image classification task. In this case, you'd need to identify and classify the vehicle in the image.
+              Here&apos;s an example of a simple image classification task. In this case, you&apos;d need to identify and classify the vehicle in the image.
             </p>
             
             <SampleTask />

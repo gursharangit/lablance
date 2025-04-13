@@ -1,5 +1,4 @@
 
-// app/labeler/payments/page.tsx
 "use client";
 
 import { PaymentHistory } from "@/components/labeler/payment-history";

@@ -15,7 +15,7 @@ export default function LabelerSuccessPage() {
                 <BadgeCheck className="h-12 w-12 text-primary" />
               </div>
             </div>
-            <CardTitle className="text-3xl text-center">You're Ready to Start!</CardTitle>
+            <CardTitle className="text-3xl text-center">You&apos;re Ready to Start!</CardTitle>
           </CardHeader>
           
           <CardContent className="text-center space-y-6">
@@ -47,7 +47,7 @@ export default function LabelerSuccessPage() {
               <h3 className="font-bold text-lg mb-2">What happens next?</h3>
               <ul className="space-y-2 list-disc pl-5">
                 <li>Browse available projects that match your skills and interests</li>
-                <li>Complete the required qualification tasks for projects you're interested in</li>
+                <li>Complete the required qualification tasks for projects you&apos;re interested in</li>
                 <li>Start labeling data and receive instant payments for each completed task</li>
                 <li>Build your reputation with high-quality work to unlock premium projects</li>
                 <li>Withdraw your earnings to any exchange or use them directly as USDC</li>

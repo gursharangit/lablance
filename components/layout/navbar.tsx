@@ -18,16 +18,18 @@ import { Separator } from "../ui/separator";
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  
+  // Close mobile menu when route changes
+  useEffect(() => {
+    if (pathname === "/") {
+      setIsOpen(false);
+    }
+  }, [pathname]);
 
   // Only render on home page
   if (pathname !== "/") {
     return null;
   }
-
-  // Close mobile menu when route changes
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
 
   // Check if route is active
   const isActive = (href: string) => {

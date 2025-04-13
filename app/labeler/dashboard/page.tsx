@@ -1,4 +1,3 @@
-// app/labeler/dashboard/page.tsx
 "use client";
 
 import { LabelerDashboard } from "@/components/dashboard/labeler-dashboard";

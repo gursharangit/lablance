@@ -1,5 +1,4 @@
 "use client";
-// app/onboarding/company/success/page.tsx
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { BadgeCheck, ArrowRight } from "lucide-react";
@@ -111,7 +110,7 @@ export default function CompanySuccessPage() {
                 <li>Our global workforce will begin labeling your data immediately</li>
                 <li>You can monitor progress in real-time from your dashboard</li>
                 <li>Payments will be automatically released to labelers as they complete verified work</li>
-                <li>You'll receive notifications when important milestones are reached</li>
+                <li>You&apos;ll receive notifications when important milestones are reached</li>
                 <li>Download your labeled data at any time during the process</li>
               </ul>
             </div>

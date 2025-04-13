@@ -1,5 +1,4 @@
 "use client";
-// components/labeling/task-interface.tsx
 import { useState, useEffect, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useWallet } from "@solana/wallet-adapter-react";
@@ -125,7 +124,7 @@ const ImageClassificationTask = ({
       
       {imageError && (
         <div className="text-sm text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20 p-2 rounded border border-amber-200 dark:border-amber-800">
-          Note: The original image couldn't be loaded. Using a placeholder image instead.
+          Note: The original image couldn&apos;t be loaded. Using a placeholder image instead.
         </div>
       )}
       
@@ -658,7 +657,7 @@ const TextAnnotationTask = ({
             <div className="bg-muted/30 p-2 rounded-md mt-4">
               <p className="text-xs text-muted-foreground">
                 <HelpCircle className="h-3 w-3 inline-block mr-1" />
-                Select text, choose a category, then click "Add Annotation" to mark entities in the text.
+                Select text, choose a category, then click &quot;Add Annotation&quot; to mark entities in the text.
               </p>
             </div>
           </div>
@@ -693,7 +692,7 @@ const TextAnnotationTask = ({
                         &times;
                       </Button>
                     </div>
-                    <p className="text-sm mt-1 font-medium">"{annotation.text}"</p>
+                    <p className="text-sm mt-1 font-medium">&quot;{annotation.text}&quot;</p>
                   </div>
                 ))}
               </div>
@@ -931,7 +930,7 @@ export function TaskInterface() {
             <>
               <div className="p-3 bg-yellow-100/50 dark:bg-yellow-900/20 mb-4 rounded-md border border-yellow-500/20">
                 <p className="text-yellow-700 dark:text-yellow-300 text-sm">
-                  Project type "{projectType}" is using a generic labeling interface.
+                  Project type &quot;{projectType}&quot; is using a generic labeling interface.
                 </p>
               </div>
               <ImageClassificationTask 

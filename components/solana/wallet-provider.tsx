@@ -1,5 +1,4 @@
 "use client";
-// components/solana/wallet-provider.tsx
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
@@ -20,7 +19,7 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 
 interface WalletContextProviderProps {
   children: ReactNode;
-  network?: WalletAdapterNetwork;
+  network?: keyof typeof WalletAdapterNetwork | string;
 }
 
 export const WalletContextProvider: FC<WalletContextProviderProps> = ({ 

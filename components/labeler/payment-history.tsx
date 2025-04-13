@@ -559,7 +559,7 @@ export function PaymentHistory() {
           <div>
             <h3 className="font-medium mb-1">Are there any fees?</h3>
             <p className="text-sm text-muted-foreground">
-              No, we don't charge any fees for payments. The only fees involved are the standard Solana transaction fees, which are minimal (typically less than $0.001).
+              No, we don&apos;t charge any fees for payments. The only fees involved are the standard Solana transaction fees, which are minimal (typically less than $0.001).
             </p>
           </div>
           

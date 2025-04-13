@@ -432,7 +432,7 @@ export function LabelerDashboard() {
                 <Brush className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                 <h3 className="text-lg font-medium mb-2">No active projects</h3>
                 <p className="text-muted-foreground max-w-md mx-auto mb-6">
-                  You haven't started working on any projects yet. Browse available projects to get started.
+                  You haven&apos;t started working on any projects yet. Browse available projects to get started.
                 </p>
                 <Button
                   onClick={() => {

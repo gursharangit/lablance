@@ -108,7 +108,7 @@ export function UserTypeSelection() {
               <Building2 className="h-10 w-10 text-primary" />
             </div>
           </div>
-          <CardTitle className="text-2xl">I'm a Company</CardTitle>
+          <CardTitle className="text-2xl">I&apos;m a Company</CardTitle>
           <CardDescription className="text-base mt-2">
             I need data labeled for my AI projects
           </CardDescription>
@@ -166,7 +166,7 @@ export function UserTypeSelection() {
               <User className="h-10 w-10 text-primary" />
             </div>
           </div>
-          <CardTitle className="text-2xl">I'm a Data Labeler</CardTitle>
+          <CardTitle className="text-2xl">I&apos;m a Data Labeler</CardTitle>
           <CardDescription className="text-base mt-2">
             I want to earn money by labeling data
           </CardDescription>

@@ -130,7 +130,7 @@ export const TeamSection = () => {
       <div className="mt-20 text-center">
         <h3 className="text-2xl font-bold mb-3">Join Our Team</h3>
         <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-          We're always looking for talented individuals passionate about AI, blockchain, 
+          We&apos;re always looking for talented individuals passionate about AI, blockchain, 
           and creating innovative solutions. Check out our open positions.
         </p>
         <Link 

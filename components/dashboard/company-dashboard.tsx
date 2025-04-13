@@ -288,7 +288,7 @@ export function CompanyDashboard() {
                 <Info className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                 <h3 className="text-lg font-medium mb-2">No active projects</h3>
                 <p className="text-muted-foreground max-w-md mx-auto mb-6">
-                  You don't have any active data labeling projects at the moment. Create a new project to get started.
+                  You don&apos;t have any active data labeling projects at the moment. Create a new project to get started.
                 </p>
                 <Button asChild>
                   <Link href="/company/new-project">
@@ -385,7 +385,7 @@ export function CompanyDashboard() {
                 <CheckCircle2 className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                 <h3 className="text-lg font-medium mb-2">No completed projects yet</h3>
                 <p className="text-muted-foreground max-w-md mx-auto">
-                  Your completed projects will appear here once they're finished.
+                  Your completed projects will appear here once they&apos;re finished.
                 </p>
               </CardContent>
             </Card>
@@ -478,7 +478,7 @@ export function CompanyDashboard() {
                 <Info className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                 <h3 className="text-lg font-medium mb-2">No projects found</h3>
                 <p className="text-muted-foreground max-w-md mx-auto mb-6">
-                  You haven't created any data labeling projects yet. Get started by creating your first project.
+                  You haven&apos;t created any data labeling projects yet. Get started by creating your first project.
                 </p>
                 <Button asChild>
                   <Link href="/company/new-project">

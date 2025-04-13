@@ -236,7 +236,7 @@ export function LabelerRegistrationForm() {
               <div className="flex items-start space-x-2 bg-muted/50 p-3 rounded-md">
                 <Info className="h-5 w-5 text-muted-foreground mt-0.5" />
                 <p className="text-sm text-muted-foreground">
-                  You'll receive instant payments in USDC directly to your Solana wallet for each task you complete.
+                  You&apos;ll receive instant payments in USDC directly to your Solana wallet for each task you complete.
                 </p>
               </div>
               

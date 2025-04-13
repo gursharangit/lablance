@@ -545,8 +545,8 @@ export function LabelerProfile() {
                         <SelectContent>
                           <SelectItem value="high-school">High School</SelectItem>
                           <SelectItem value="college">Some College</SelectItem>
-                          <SelectItem value="bachelors">Bachelor's Degree</SelectItem>
-                          <SelectItem value="masters">Master's Degree</SelectItem>
+                          <SelectItem value="bachelors">Bachelor&apos;s Degree</SelectItem>
+                          <SelectItem value="masters">Master&apos;s Degree</SelectItem>
                           <SelectItem value="phd">PhD or Doctorate</SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
@@ -789,7 +789,7 @@ export function LabelerProfile() {
                   </Badge>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2">
-                  This is the wallet where you'll receive payments for completed tasks.
+                  This is the wallet where you&apos;ll receive payments for completed tasks.
                 </p>
               </div>
               
@@ -814,7 +814,7 @@ export function LabelerProfile() {
                 </p>
                 {profile.stats?.completedTasks > 0 && (
                   <p className="text-xs text-muted-foreground mt-1">
-                    You've completed {profile.stats.completedTasks} tasks with a rating of {profile.rating?.toFixed(1) || 'N/A'}/5.0
+                    You&apos;ve completed {profile.stats.completedTasks} tasks with a rating of {profile.rating?.toFixed(1) || 'N/A'}/5.0
                   </p>
                 )}
               </div>

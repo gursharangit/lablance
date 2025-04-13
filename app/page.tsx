@@ -1,3 +1,4 @@
+"use client";
 import { BenefitsSection } from "@/components/layout/sections/benefits";
 import { FAQSection } from "@/components/layout/sections/faq";
 import { FeaturesSection } from "@/components/layout/sections/features";

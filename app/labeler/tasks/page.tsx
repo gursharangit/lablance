@@ -1,5 +1,4 @@
 
-// app/labeler/tasks/page.tsx
 "use client";
 
 import { TaskInterface } from "@/components/labeling/task-interface";

@@ -102,7 +102,7 @@ export const FAQSection = () => {
         <div className="mt-12 text-center bg-muted/30 p-8 rounded-lg border border-muted-foreground/10">
           <h3 className="text-xl font-bold mb-3">Still have questions?</h3>
           <p className="text-muted-foreground mb-6">
-            If you couldn't find the answer to your question, feel free to reach out to our support team.
+            If you couldn&apos;t find the answer to your question, feel free to reach out to our support team.
           </p>
           <Button asChild>
             <Link href="mailto:gurusharanworks1@gmail.com">

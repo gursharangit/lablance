@@ -229,8 +229,8 @@ export function LabelerSkillsForm() {
                   <SelectContent>
                     <SelectItem value="high-school">High School</SelectItem>
                     <SelectItem value="college">Some College</SelectItem>
-                    <SelectItem value="bachelors">Bachelor's Degree</SelectItem>
-                    <SelectItem value="masters">Master's Degree</SelectItem>
+                    <SelectItem value="bachelors">Bachelor&apos;s Degree</SelectItem>
+                    <SelectItem value="masters">Master&apos;s Degree</SelectItem>
                     <SelectItem value="phd">PhD or Doctorate</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
